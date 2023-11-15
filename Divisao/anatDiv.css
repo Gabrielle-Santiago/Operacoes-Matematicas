@@ -1,0 +1,17 @@
+body{
+    background: #04013c;
+    background: linear-gradient(90deg, rgb(9, 4, 104) 0%, rgba(57,57,166,1) 50%, rgb(39, 160, 184) 100%);
+    color: #d7dde1;
+    margin: 15px 15px;
+}
+#resul{
+    height: 350px;
+    width: 400px;
+    background-color: #FFE4B5;
+    border: 2px solid #000;
+}
+.parag{
+    color: #000;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
