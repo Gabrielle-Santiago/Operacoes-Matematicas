@@ -11,22 +11,35 @@
         <h1>Informe seu Salário</h1>
     </header>
 
-    <form action="">
-        <label for="">
-            <input type="number" name="num" id="num" min="1" required>
+    <form action="<?=$_SERVER['PHP_SELF'] ?>" method="get">
+
+        <label for="salario">
+            <input type="number" name="salario" min="1" required>
         </label>
+
+        <input type="submit" value="Enviar">
+
     </form>
 
-    <p>Considereando o salário mínimo de R$1.380,00</p>
 
-    <div id="resul">
+    <p>Considereando o salário mínimo de R$1.380,00</p>
+        
+    <div id="resul" class="resuFinal">
         <h2 style="color: black;">Resultado Final</h2>
-    </div>
-    
-    <div class="resuFinal">
         <?php
-            //Explicação: Salário vai ser dividido pelo salário mínimo e essa será a quantidade que salários que a pessoa recebe e o resto "%" será a sobra do salário correspondente
             
+            if (isset($_GET['salario'])) {
+                $salario = $_GET['salario'];
+
+                if($salario != 0){
+                    $resul = ($salario / 1380);
+                    $rest = ($salario % 1380);
+                    $resul = number_format($resul, 0);
+                    $rest = number_format($rest, 2);
+
+                    echo "<p>Seu salário equivale a $resul salários mínimos + R$$rest reais.</p>";
+                }
+            }
         ?>
     </div>
 </body>

@@ -4,6 +4,11 @@ body{
     color: #d7dde1;
     margin: 15px 15px;
 }
+.resuFinal{
+    color: #000;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
 #resul{
     height: 350px;
     width: 400px;
