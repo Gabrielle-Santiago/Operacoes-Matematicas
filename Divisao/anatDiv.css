@@ -3,15 +3,69 @@ body{
     background: linear-gradient(90deg, rgb(9, 4, 104) 0%, rgba(57,57,166,1) 50%, rgb(39, 160, 184) 100%);
     color: #d7dde1;
     margin: 15px 15px;
+    text-align: center;
+}
+h1{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    height: 80px;
+}
+input{
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 10px;
 }
 #resul{
-    height: 350px;
-    width: 400px;
+    height: 250px;
+    width: 350px;
     background-color: #FFE4B5;
-    border: 2px solid #000;
-}
-.parag{
+    border: 3px solid #000;
+    border-radius: 10px;
     color: #000;
     font-size: 1.3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    margin: auto;
+    padding: 20px;
+}
+#button{
+    font-size: 14px;
+    color: #000000;
+    background-color: #f9f9aef1;
+    padding: 4px;
+    height: 25px;
+    width: 60px;
+    border-radius: 5px;
+    box-shadow: 4px 3px 3px #393927f1;
+}
+
+/*Abaixo as estilazações das linhas*/
+.resultado{
+    font-size: 30px;
+    padding-top: 10px;
+}
+#divisor, #resulDiv{
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 50px;
+    right: 35%;
+}
+#dividendo, #resto {
+    margin-right: 200px;
+    position: absolute;
+    margin-top: 50px;
+    left: 35%;
+}
+#linha{
+    border-top: 3px solid black;
+}
+#linha2{
+    display: block;
+    width: 3px;
+    margin: auto;
+    height: 120px;
+    background-color: #000;
 }

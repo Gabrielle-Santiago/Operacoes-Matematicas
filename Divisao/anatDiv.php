@@ -19,14 +19,14 @@
             <input type="number" name="anatDiv2" id="anatDiv2" min="1" required>
         </label>
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" id="button">
     </form>
 
     <div>
         <h1>Estrutura da Divisão</h1>
     </div>
-    <div id="resul" class="parag">
-    
+
+    <section id="resul"> 
 
     <?php 
          if (isset($_GET['anatDiv1']) && isset($_GET['anatDiv2'])) {
@@ -39,10 +39,18 @@
             $restDiv = ($numUM % $numDOIS);
             $resul = number_format($resul, 2);
 
-            echo "<p>$numUM $numDOIS $restDiv $resul</p>";
+            echo "
+                <div class='resultado'>
+                    <div id='dividendo'>$numUM</div>
+                    <div id='divisor';>$numDOIS</div>
+                    <div id='linha2'></div>
+                    <div id='linha'></div>
+                    <div id='resulDiv'>$resul</div>
+                    <div id='resto'>$restDiv</div>
+                </div>";
          }
         }
     ?>
-    </div>
+    </section>
 </body>
 </html>
