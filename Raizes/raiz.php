@@ -23,10 +23,11 @@
 
     if (isset($_GET['num'])) {
         $num = $_GET['num'];
-
+        
         if ($num != 0) {
-            $raizQuad = ($num ** 2);
-            $raizCub = ($num ** 3);
+
+            $raizQuad = (sqrt($num));
+            $raizCub = (pow($num, 1/3));
             
             $raizQuad = number_format( $raizQuad, 2);
             $raizCub = number_format( $raizCub, 2);
