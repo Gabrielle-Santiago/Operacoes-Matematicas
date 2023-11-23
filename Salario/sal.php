@@ -17,12 +17,12 @@
             <input type="number" name="salario" min="1" required>
         </label>
 
-        <input type="submit" value="Enviar">
+        <input id="button" type="submit" value="Enviar">
 
     </form>
 
 
-    <p>Considereando o salário mínimo de R$1.380,00</p>
+    <p>Considerando o salário mínimo de R$1.380,00</p>
         
     <div id="resul" class="resuFinal">
         <h2 style="color: black;">Resultado Final</h2>
@@ -41,6 +41,9 @@
                 }
             }
         ?>
+    </div>
+    <div>
+        <a href="https://gabrielle-santiago.github.io/Operacoes-Matematicas/" id="voltar">Voltar</a>
     </div>
 </body>
 </html>

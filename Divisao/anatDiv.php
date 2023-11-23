@@ -19,8 +19,6 @@
             <input type="number" name="anatDiv2" id="anatDiv2" min="1" required>
         </label>
 
-        <input type="submit" value="Enviar">
-
         <input type="submit" value="Enviar" id="button">
     </form>
 
@@ -57,6 +55,7 @@
         }
         ?>   
     </div>
+    <a href="https://gabrielle-santiago.github.io/Operacoes-Matematicas/" id="voltar">Voltar</a>
 </section>
 
 </body>
