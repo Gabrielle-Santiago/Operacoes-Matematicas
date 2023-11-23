@@ -1,0 +1,45 @@
+body{
+    background: #04013c;
+    background: linear-gradient(90deg, rgb(9, 4, 104) 0%, rgba(57,57,166,1) 50%, rgb(39, 160, 184) 100%);
+    color: #d7dde1;
+    text-align: center;
+}
+.val{
+    width: 350px;
+    height: 25px;
+}
+.resuFinal{
+    margin: auto;
+    color: #000;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+#resul{
+    margin: auto;
+    height: 180px;
+    width: 400px;
+    background-color: #FFE4B5;
+    border: 2px solid #000;
+    position: relative;
+}
+#formulario{
+    margin: auto;
+    background-color: #FFE4B5;
+    color: #000;
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#voltar{
+    margin: 10px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-decoration: none;
+    color: #000;
+    background-color: #d7dde1;
+    height: 24px;
+    width: 50px;
+    border-radius: 5px;
+}
