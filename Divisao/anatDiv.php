@@ -20,12 +20,15 @@
         </label>
 
         <input type="submit" value="Enviar">
-        
+
+        <input type="submit" value="Enviar" id="button">
     </form>
 
     <div>
         <h1>Estrutura da Divisão</h1>
     </div>
+
+<section id="resul"> 
 
     <div id="resul" class="resuFinal">
         <?php 
@@ -41,10 +44,20 @@
             $restDiv = ($numUM % $numDOIS);
             $resul = number_format($resul, 2);
 
-            echo "<p>$numUM $numDOIS $restDiv $resul</p>";
+            echo "
+                <div class='resultado'>
+                    <div id='dividendo'>$numUM</div>
+                    <div id='divisor';>$numDOIS</div>
+                    <div id='linha2'></div>
+                    <div id='linha'></div>
+                    <div id='resulDiv'>$resul</div>
+                    <div id='resto'>$restDiv</div>
+                </div>";
          }
         }
         ?>   
     </div>
+</section>
+
 </body>
 </html>
