@@ -8,8 +8,7 @@
 </head>
 <body>
     <h1>Anatomia de Divisão</h1>
-
-    <!-- Verificar a página pois está no localhost -->
+    
     <form action="<?=$_SERVER['PHP_SELF'] ?>" method="get">
 
         <label for="anatDiv1">
@@ -26,35 +25,34 @@
         <h1>Estrutura da Divisão</h1>
     </div>
 
-<section id="resul"> 
-
-    <div id="resul" class="resuFinal">
+ <section id="resul" class="resuFinal"> 
+    
         <?php 
+        $numUM = isset($_GET['anatDiv1']) ? $_GET['anatDiv1'] : 1;
+        $numDOIS = isset($_GET['anatDiv2']) ? $_GET['anatDiv2'] : 1;
+        
+        $resul = '';
+        $restDiv = '';
 
-         if (isset($_GET['anatDiv1']) && isset($_GET['anatDiv2'])) {
-            $numUM = $_GET['anatDiv1'];
-            $numDOIS = $_GET['anatDiv2'];
-
-         //Quantidade de casas decimais
-
-         if ($numUM != 0 && $numDOIS != 0) {
+        if ($numUM != 0 && $numDOIS != 0) {
             $resul = ($numUM / $numDOIS);
             $restDiv = ($numUM % $numDOIS);
             $resul = number_format($resul, 2);
-
-            echo "
-                <div class='resultado'>
-                    <div id='dividendo'>$numUM</div>
-                    <div id='divisor';>$numDOIS</div>
-                    <div id='linha2'></div>
-                    <div id='linha'></div>
-                    <div id='resulDiv'>$resul</div>
-                    <div id='resto'>$restDiv</div>
-                </div>";
-         }
         }
-        ?>   
-    </div>
+
+        if ($numUM !== '' && $numDOIS !== '') : ?>
+        <table class="divisao">
+            <tr>
+                <td><?=$numUM?></td>
+                <td><?=$numDOIS?></td>
+            </tr>
+            <tr>
+                <td><?=$restDiv?></td>
+                <td><?=$resul?></td>
+            </tr>
+        </table>
+    <?php endif ?>
+    
     <a href="https://gabrielle-santiago.github.io/Operacoes-Matematicas/" id="voltar">Voltar</a>
 </section>
 

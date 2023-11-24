@@ -4,8 +4,10 @@ body{
     color: #d7dde1;
     margin: 15px 15px;
     text-align: center;
+    color: #000;
 }
 h1{
+    color: #d7dde1;
     margin-top: 40px;
     margin-bottom: 10px;
     height: 80px;
@@ -19,63 +21,19 @@ input{
     padding: 5px;
     margin-right: 10px;
 }
-#resul{
-    height: 250px;
-    width: 350px;
-    background-color: #FFE4B5;
-    margin: auto;
 
-.resuFinal{
-    border: 3px solid #000;
-    border-radius: 10px;
-    color: #000;
-    font-size: 1.3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
-    margin: auto;
-    padding: 20px;
-}
 #button{
-    font-size: 10px;
+    font-size: 12px;
     color: #000000;
     background-color: #f9f9aef1;
-    padding: 4px;
-    height: 25px;
+    padding: 8px;
+    height: 30px;
     width: 50px;
     border-radius: 5px;
     box-shadow: 4px 3px 3px #393927f1;
 }
-
-/*Abaixo as estilazações das linhas*/
-.resultado{
-    font-size: 30px;
-    padding-top: 10px;
-}
-#divisor, #resulDiv{
-    margin-left: 200px;
-    position: absolute;
-    margin-top: 50px;
-    right: 35%;
-}
-#dividendo, #resto {
-    margin-right: 200px;
-    position: absolute;
-    margin-top: 50px;
-    left: 35%;
-}
-#linha{
-    border-top: 3px solid black;
-}
-#linha2{
-    display: block;
-    width: 3px;
-    margin: auto;
-    height: 120px;
-    background-color: #000;
-}
-}
 #voltar{
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px;
     position: absolute;
     left: 0%;
     top: 0%;
@@ -85,4 +43,56 @@ input{
     height: 24px;
     width: 50px;
     border-radius: 5px;
+}
+
+/* TABELAS E LISTAS (Guanabara)*/
+
+table {
+    min-width: 400px;
+    border-spacing: 0px;
+    border: 0.5px solid #372991;
+    margin: 10px auto;
+}
+
+table th {
+    background-color: #372991;
+    color: #000000;
+    padding: 5px;
+    text-align: left;
+}
+
+table td {
+    padding: 5px;
+}
+
+table tr {
+    background-color: rgba(55, 41, 145, 0.05);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(55, 41, 145, 0.3);
+}
+
+table.divisao {
+    border: 1px solid #000000;
+}
+
+table.divisao td {
+    background-color: #FFE4B5;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+table.divisao  tr:nth-child(1) td:nth-child(2) {
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+table.divisao tr:nth-child(2) td:nth-child(2) {
+    border-left: 3px solid black;
+}
+
+table.divisao tr:nth-child(2) td:nth-child(1) {
+    text-decoration: underline;
 }
