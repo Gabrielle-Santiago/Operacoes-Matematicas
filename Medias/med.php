@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Média Aritmética</title>
     <link rel="stylesheet" href="med.css">
 </head>
+
 <body>
     <div id="formulario">
         <form method="get" action="<?=$_SERVER['PHP_SELF']?>">
@@ -68,4 +70,5 @@
 
     <a href="https://gabrielle-santiago.github.io/Operacoes-Matematicas/" id="voltar">Voltar</a>
 </body>
+
 </html>
