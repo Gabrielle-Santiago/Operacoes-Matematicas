@@ -1,0 +1,51 @@
+body{
+    background: #04013c;
+    background: linear-gradient(90deg, rgb(9, 4, 104) 0%, rgba(57,57,166,1) 50%, rgb(39, 160, 184) 100%);
+    color: #d7dde1;
+}
+h1{
+    text-align: center;
+}
+.val{
+    width: 350px;
+    height: 25px;
+    font-size: 16px;
+}
+.resuFinal{
+    margin: auto;
+    color: #000;
+    padding-left: 8px;
+    text-indent: 15px;
+    font-size: 16px;
+    font-family:  Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+#resul{
+    margin: auto;
+    height: 180px;
+    width: 400px;
+    background-color: #FFE4B5;
+    border: 2px solid #000;
+    position: relative;
+}
+#formulario{
+    background-color: #FFE4B5;
+    color: #000;
+    width: 380px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#voltar{
+    margin: 10px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-decoration: none;
+    color: #000;
+    background-color: #d7dde1;
+    height: 24px;
+    width: 50px;
+    border-radius: 5px;
+}
