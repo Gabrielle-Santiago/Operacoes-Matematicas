@@ -2,16 +2,16 @@ body{
     background: #04013c;
     background: linear-gradient(90deg, rgb(9, 4, 104) 0%, rgba(57,57,166,1) 50%, rgb(39, 160, 184) 100%);
     color: #d7dde1;
-    text-align: center;
 }
 .val{
     width: 350px;
     height: 25px;
+    font-size: 20px;
 }
 .resuFinal{
     margin: auto;
     color: #000;
-    font-size: 1.3rem;
+    font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
 #resul{
@@ -23,7 +23,6 @@ body{
     position: relative;
 }
 #formulario{
-    margin: auto;
     background-color: #FFE4B5;
     color: #000;
     width: 380px;

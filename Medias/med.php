@@ -35,7 +35,7 @@
     </div>
     <div id="resul" class="resuFinal">
         <?php
-        //o objetivo é calcular a média aritmética simples e ponderada
+        
         echo "<h1>Cálculo das Médias</h1>"; 
 
         if (isset($_GET['valor1'])) {
