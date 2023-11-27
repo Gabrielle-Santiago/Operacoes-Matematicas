@@ -1,0 +1,58 @@
+body{
+    background: #04013c;
+    background: linear-gradient(90deg, rgb(9, 4, 104) 0%, rgba(57,57,166,1) 50%, rgb(39, 160, 184) 100%);
+    color: #000000;
+}
+h1{
+    color: #d7dde1;
+    text-align: center;
+}
+input{
+    height: 22px;
+    text-align: center;
+}
+p{
+    font-size: 18px;
+}
+.resuFinal{
+    margin: auto;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+#resul{
+    margin: auto;
+    padding-left: 10px;
+    height: 250px;
+    width: 400px;
+    background-color: #FFE4B5;
+    border: 2px solid #000;
+}
+#voltar{
+    margin: 10px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-decoration: none;
+    color: #000;
+    background-color: #d7dde1;
+    height: 24px;
+    width: 50px;
+    border-radius: 5px;
+}
+/* Barra de Progressão */
+
+.progress-bar {
+    height: 20px;
+    padding: 5px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.progress-bar::before {
+    content: "";
+    width: var(--progress);
+    background-color: #353434;
+}
