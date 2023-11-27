@@ -1,0 +1,69 @@
+body{
+    background: #04013c;
+    background: linear-gradient(90deg, rgb(9, 4, 104) 0%, rgba(57,57,166,1) 50%, rgb(39, 160, 184) 100%);
+    color: #000;
+    margin: 15px 15px;
+    text-align: center;
+}
+.resuFinal{
+    margin: auto;
+    color: #000;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+#saque{
+    margin: auto;
+    margin-top: 15px;
+    height: 500px;
+    width: 450px;
+    background-color: #faecd4;
+    border: 2px solid #000;
+    position: relative;
+}
+#resul{
+    margin: auto;
+    height: 210px;
+    width: 450px;
+    background-color: #FFE4B5;
+    border: 2px solid #000;
+    position: relative;
+}
+input{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+}
+#voltar{
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-decoration: none;
+    color: #000;
+    background-color: #d7dde1;
+    height: 24px;
+    width: 50px;
+    border-radius: 5px;
+}
+.notas{
+    max-width: 120px;
+    max-height: 100px;
+    display: flex;
+    margin: left;
+    padding-bottom: 7px;
+}
+.valores{
+    height: 500;
+    width: 150px;
+    font-size: 22px;
+    float: inline-end;
+    position: relative;
+    right: 160px;
+    left: -180px;
+    top: -50px;
+}
