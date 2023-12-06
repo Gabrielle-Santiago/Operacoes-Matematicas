@@ -13,17 +13,57 @@
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
 
             <p>Preço do Produto</p>
-            <label for="">
-                <input type="number" name="" id="">
+            <label for="produto">
+                <input type="number" name="produto" id="produto">
             </label>
 
-            <p>Qual será o percentual de reajuste?</p>
+            <p for="reaj"></p>
 
-            <div class="progress-bar"></div>
+            <div>
+            <label for="reaj">
+                Qual será o percentual de reajuste?(<strong><span id="p">?%</span>%</strong>) <br></label>
+
+            <input type="range" name="reaj" id="reaj" min="0" max="100" step="1" oninput="mudaValor()">
+            </div>
             
             <input type="submit" value="Reajustar">
         </form>
     </section>
+
+    <script>
+        mudaValor();
+        function mudaValor() {
+            p.innerText = reaj.value;
+        }
+        let resul = document.getElementById('resul');
+
+    </script>
+
+    <div id="resul" style="margin-top: 10px;">
+        <?php
+
+        if(isset($_GET['produto']) && isset($_GET['reaj'])){
+        $produto = $_GET['produto'];
+        $reaj = $_GET['reaj'];
+
+
+        if ($produto) {
+            
+                $porc = ($produto * $reaj / 100);
+                $soma = $porc + $produto; 
+            
+            echo 
+                "<h2>
+                    Resultado do Reajuste
+                </h2>
+                <p>
+                    O produto que custava R$$produto, com $reaj% de aumento vai passar a custar R$$soma (a diferença é de R$$porc).
+                </p>";
+        }
+    }
+    
+        ?>
+    </div>
 
     <a href="https://gabrielle-santiago.github.io/Operacoes-Matematicas/" id="voltar">Voltar</a>
 </body>

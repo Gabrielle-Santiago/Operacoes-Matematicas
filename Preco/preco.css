@@ -14,11 +14,19 @@ input{
 p{
     font-size: 18px;
 }
-.resuFinal{
+.resulFinal{
     margin: auto;
     color: #000;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+#final{
+    margin: auto;
+    padding-left: 10px;
+    height: 250px;
+    width: 400px;
+    background-color: #FFE4B5;
+    border: 2px solid #000;
 }
 #resul{
     margin: auto;
