@@ -7,47 +7,45 @@
     <link rel="stylesheet" href="preco.css">
 </head>
 <body>
-    <h1>Reajustador de Preços</h1>
+    <main>
+        <h1>Reajustador de Preços</h1>
+        <section id="resul" class="resulFinal">
+            <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
 
-    <section id="resul" class="resulFinal">
-        <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
-
-            <p>Preço do Produto</p>
-            <label for="produto">
-                <input type="number" name="produto" id="produto">
-            </label>
-
-            <p for="reaj"></p>
-
-            <div>
-            <label for="reaj">
-                Qual será o percentual de reajuste?(<strong><span id="p">?%</span>%</strong>) <br></label>
-
-            <input type="range" name="reaj" id="reaj" min="0" max="100" step="1" oninput="mudaValor()">
-            </div>
+                <p>
+                    Preço do Produto
+                </p>
+                <label for="produto">
+                    <input type="number" name="produto" id="produto" min="0.10" step="0.01">
+                </label>
             
-            <input type="submit" value="Reajustar">
-        </form>
-    </section>
+                <div>
+                <label for="reaj">
+                    Qual será o percentual de reajuste?(<strong><span id="p">?%</span>%</strong>) <br></label>
+                <input type="range" name="reaj" id="reaj" min="0" max="100" step="1" oninput="mudaValor()">
+                </div>
+        
+                <input type="submit" value="Reajustar">
+            </form>
+        </section>
 
-    <script>
-        mudaValor();
-        function mudaValor() {
-            p.innerText = reaj.value;
-        }
-        let resul = document.getElementById('resul');
+        <script>
+            mudaValor();
+            function mudaValor() {
+                p.innerText = reaj.value;
+            }
+        </script>
+    </main>
 
-    </script>
-
-    <div id="resul" style="margin-top: 10px;">
+    <div id="final" style="margin-top: 10px;">
+    
         <?php
 
         if(isset($_GET['produto']) && isset($_GET['reaj'])){
         $produto = $_GET['produto'];
         $reaj = $_GET['reaj'];
-
-
-        if ($produto) {
+       
+            if ($produto) {
             
                 $porc = ($produto * $reaj / 100);
                 $soma = $porc + $produto; 
