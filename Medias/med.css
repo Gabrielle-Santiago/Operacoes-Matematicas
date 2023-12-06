@@ -3,6 +3,9 @@ body{
     background: linear-gradient(90deg, rgb(9, 4, 104) 0%, rgba(57,57,166,1) 50%, rgb(39, 160, 184) 100%);
     color: #d7dde1;
 }
+li{
+    text-align: left;
+}
 .val{
     width: 350px;
     height: 25px;
@@ -11,23 +14,20 @@ body{
 .resuFinal{
     margin: auto;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
 #resul{
     margin: auto;
-    height: 180px;
     width: 400px;
     background-color: #FFE4B5;
     border: 2px solid #000;
-    position: relative;
 }
 #formulario{
     background-color: #FFE4B5;
     color: #000;
     width: 380px;
     padding: 10px;
-    margin-bottom: 10px;
     border-radius: 10px;
 }
 #voltar{
