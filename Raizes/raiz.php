@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="raiz.css">
 </head>
 <body>
-    <h1>Informa um Número</h1>
+    <h1>Informe um Número</h1>
 
     <form action="<?=$_SERVER['PHP_SELF'] ?>" method="get">
         <label for="num">
@@ -15,6 +15,10 @@
 
             <input type="submit" value="Enviar">
         </label>
+        <p> 
+            *Escolha um número para descobrir sua raiz quadrada e a raiz cúbica.
+
+        </p>
     </form>
 
     <div id="resul" style="color: black;">
@@ -32,7 +36,8 @@
             $raizQuad = number_format( $raizQuad, 2);
             $raizCub = number_format( $raizCub, 2);
 
-            echo "Analisando o número <strong> $num, </strong> temos:
+            echo "
+            Analisando o número <strong> $num, </strong> temos:
             <ul>
                 <li> A raiz quadrada é $raizQuad
                 <li> A raiz cúbica é $raizCub

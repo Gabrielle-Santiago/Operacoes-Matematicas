@@ -25,16 +25,20 @@
             $segundo = $_GET['segundo'];
 
             if ($segundo != 0) {
-                //a lógica está errada, está calulando cada um separadamente e não em conjunto
-                $segundos = floor($segundo % 60);
                 
-                $minutos = floor($segundo / 60); 
+                $semanas = floor($segundo / 604800); // 604800 segundos em uma semana
+                $restoSemanas = $segundo % 604800;
+    
+                $dias = floor($restoSemanas / 86400); // 86400 segundos em um dia
+                $restoDias = $restoSemanas % 86400;
+    
+                $horas = floor($restoDias / 3600); // 3600 segundos em uma hora
+                $restoHoras = $restoDias % 3600;
+    
+                $minutos = floor($restoHoras / 60); // 60 segundos em um minuto
                 
-                $horas = floor($minutos / 60);
-
-                $dias = floor($horas / 24);
-
-                $semanas = floor($dias / 7);
+                $segundos = $restoHoras % 60;
+    
 
                 echo"<p>Analisando o valor que você digitou, $segundo segundos equivalem a um total de:
                 <ul>
