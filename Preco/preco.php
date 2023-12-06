@@ -25,7 +25,7 @@
                 <input type="range" name="reaj" id="reaj" min="0" max="100" step="1" oninput="mudaValor()">
                 </div>
         
-                <input type="submit" value="Reajustar">
+                <input type="submit" value="Reajustar" id="button">
             </form>
         </section>
 
