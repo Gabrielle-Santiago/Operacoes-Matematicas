@@ -7,12 +7,30 @@ h1{
     color: #d7dde1;
     text-align: center;
 }
-input{
-    height: 22px;
+h2{
     text-align: center;
 }
+input{
+    height: 22px;
+    width: 140px;
+    text-align: center;
+    margin-bottom: 18px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
 p{
-    font-size: 18px;
+    font-size: 20px;
+}
+#reaj{
+    margin: 8px;
+    width: 95%;
+    height: 50px;
+}
+#button{
+    margin-left: 25%;
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
 }
 .resulFinal{
     margin: auto;
@@ -23,10 +41,11 @@ p{
 #final{
     margin: auto;
     padding-left: 10px;
-    height: 250px;
+    height: 200px;
     width: 400px;
     background-color: #FFE4B5;
     border: 2px solid #000;
+    text-indent: 18px;
 }
 #resul{
     margin: auto;
